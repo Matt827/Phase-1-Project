@@ -21,3 +21,5 @@ Order a certain beer form.
 ![image](https://github.com/Kmlove/Phase-1-Project/assets/106281281/b50a969e-4e6f-4fef-bc0e-6bd73ba54609)
 
 ## Kanban Board
+![image](https://github.com/Kmlove/Phase-1-Project/assets/106281281/c388e4a1-2058-4ce8-8275-aa89335c0cae)
+
