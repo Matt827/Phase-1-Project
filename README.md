@@ -16,6 +16,8 @@ To enter the page, you must first check a box to confirm that you are 21 or olde
 ## External API
 [https://api.openbrewerydb.org/breweries](https://api.punkapi.com/v2/beers)
 
+Documentation: https://punkapi.com/documentation/v2
+
 ## Wireframe
 ![image](https://github.com/Kmlove/Phase-1-Project/assets/106281281/61fd9a30-4eb4-44d7-8b31-a8c14d4ea01a)
 
