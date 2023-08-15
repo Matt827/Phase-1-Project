@@ -1,3 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    font-size: 30px;
+}
+
+#center{
+    margin: 0 auto;
+}
+
+#right{
+    width: 300px;
+    margin: 0 auto;
+}
+
+#left{
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+#middle{
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+#beer-image{
+    width: 150px;
+    height: 450px;
+}
+
 #bottom{
     display: flex;
     gap: 10px; 
