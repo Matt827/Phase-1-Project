@@ -5,6 +5,7 @@ const beerDisplayName = document.querySelector("#nameOfBeer")
 const beerDisplayTagline = document.querySelector("#beerTagline")
 const beerDisplayDescription = document.querySelector("#description")
 const beerDisplayBrewersTips = document.querySelector("#brewersTips p")
+const beerMenu = document.querySelector("#bottom")
 
 // Functions
 function beerDisplay(beerObj){
@@ -23,5 +24,18 @@ fetch(url)
     let beerObj = data[0]
     console.log(beerObj)
     beerDisplay(beerObj)
+
+    data.forEach((beer) => {
+        const container = document.createElement("div")
+        const beerImg = document.createElement("img")
+        const beerName = document.createElement("h3")
+
+        beerImg.src = beer.image_url
+        beerName.textContent = beer.name
+
+        container.append(beerName, beerImg)
+        beerMenu.append(container)
+
+    })
 
 })
