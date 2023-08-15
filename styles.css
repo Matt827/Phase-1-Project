@@ -1,0 +1,16 @@
+#bottom{
+    display: flex;
+    gap: 10px; 
+    overflow-x: scroll; 
+}
+
+#bottom div{
+    border: 1px solid black;
+    background-color: tan;
+    padding: 0px 10px;
+}
+
+#bottom div img{
+    width: 100px;
+    height: 300px;
+}
