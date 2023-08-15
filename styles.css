@@ -14,3 +14,12 @@
     width: 100px;
     height: 300px;
 }
+
+.blur{
+    opacity: 0.5;
+    filter: blur(15px);
+}
+
+.hidden{
+    display: none;
+}
