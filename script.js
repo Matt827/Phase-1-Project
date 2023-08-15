@@ -21,7 +21,8 @@ function beerDisplay(beerObj){
 fetch(url)
 .then(res => res.json())
 .then(data => {   
-    let beerObj = data[0]
+    
+    let beerObj = data[Math.floor(Math.random() * (data.length - 1))]
     console.log(beerObj)
     beerDisplay(beerObj)
 
@@ -35,6 +36,10 @@ fetch(url)
 
         container.append(beerName, beerImg)
         beerMenu.append(container)
+
+        container.addEventListener("click", (e) => {
+            beerDisplay(beer)
+        })
 
     })
 
