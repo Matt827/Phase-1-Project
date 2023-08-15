@@ -43,6 +43,14 @@ fetch(url)
             beerDisplay(beer)
         })
 
+        container.addEventListener("mouseover", (e) => {
+            container.style.backgroundColor = "orange"
+        })
+
+        container.addEventListener("mouseout", (e) => {
+            container.style.backgroundColor = "tan"
+        })
+
     })
 
 })
