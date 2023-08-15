@@ -6,6 +6,9 @@ const beerDisplayTagline = document.querySelector("#beerTagline")
 const beerDisplayDescription = document.querySelector("#description")
 const beerDisplayBrewersTips = document.querySelector("#brewersTips p")
 const beerMenu = document.querySelector("#bottom")
+const checkbox = document.querySelector("#checkbox")
+const confirm21 = document.querySelector("#confirm21")
+const blurDiv = document.querySelector("#blur")
 
 // Functions
 function beerDisplay(beerObj){
@@ -23,7 +26,6 @@ fetch(url)
 .then(data => {   
     
     let beerObj = data[Math.floor(Math.random() * (data.length - 1))]
-    console.log(beerObj)
     beerDisplay(beerObj)
 
     data.forEach((beer) => {
@@ -43,4 +45,9 @@ fetch(url)
 
     })
 
+})
+
+// Checkbox event that unblurrs the background
+checkbox.addEventListener("change", (e) => {
+    e.target.checked === true ? (blurDiv.classList.remove("blur"), confirm21.classList.add("hidden")) : alert("UNDERAGEEEEEEEEE")
 })
