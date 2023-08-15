@@ -14,7 +14,7 @@ To enter the page, you must first check a box to confirm that you are 21 or olde
 5. Add show instructions button that toggles a table of the ingredients for the beer
 
 ## External API
-[https://api.openbrewerydb.org/breweries](https://api.punkapi.com/v2/beers)
+https://api.punkapi.com/v2/beers
 
 Documentation: https://punkapi.com/documentation/v2
 
