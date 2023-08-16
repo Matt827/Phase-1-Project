@@ -2,12 +2,16 @@
     box-sizing: border-box;
 }
 
+/* Begin header styles */
 header{
     text-align: center;
     font-size: 25px;
 }
+/* End header styles */
 
-#blur{
+
+/* mainContent styles */
+#mainContent{
     max-width: 1350px;
     margin: 30px auto;
     /* background-image: url("https://images.unsplash.com/photo-1597290282695-edc43d0e7129?crop=faces%2Cedges&cs=tinysrgb&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjkyMTM3NjM3fA&ixlib=rb-4.0.3&q=60&w=1200&auto=format&h=630&mark-w=64&mark-align=top%2Cleft&mark-pad=50&blend-mode=normal&blend-alpha=10&blend-w=1&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&blend=000000");
@@ -16,6 +20,36 @@ header{
     background-position: center; */
 }
 
+
+/* Begin middle div styles */
+#middle{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+#left{
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+#beerName h2{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+#beerName p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+#beer-image{
+    width: 175px;
+    height: 450px;
+}
 
 #right{
     width: 300px;
@@ -26,30 +60,15 @@ header{
     height: 500px;
 }
 
-#left{
-    width: 300px;
-    height: 500px;
-    border: 1px solid black;
-}
-
-#middle{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-#beer-image{
-    width: 150px;
-    height: 450px;
-}
-
 #brewersTips, #beerDescription {
     border: 2px solid black;
     border-radius: 10px;
     padding: 5px;
 }
+/* End middle div styles */
 
+
+/* Begin bottom div styles */
 #bottom{
     display: flex;
     gap: 15px; 
@@ -82,12 +101,16 @@ header{
     bottom: 2px;
     left: 25%;
 }
+/* End bottom div styles */
 
+
+/* Class that blurs the background */
 .blur{
     opacity: 0.5;
     filter: blur(15px);
 }
 
+/* Class that hides something from display */
 .hidden{
     display: none;
 }
