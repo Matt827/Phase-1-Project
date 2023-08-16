@@ -11,8 +11,9 @@ const confirm21 = document.querySelector("#confirm21")
 const mainContentDiv = document.querySelector("#mainContent")
 const header = document.querySelector("header")
 const foodPairingBtn = document.querySelector("#seeFoodPairings")
-const ingredientsBtn = document.querySelector("#seeIngredients")
+const moreBeerDetailsBtn = document.querySelector("#moreBeerDetails")
 const foodList = document.querySelector("#foodPairings")
+const detailsList = document.querySelector("#beerDetails")
 
 let curBeer = {}
 
@@ -26,6 +27,7 @@ function beerDisplay(beerObj){
     beerDisplayBrewersTips.textContent = beerObj.brewers_tips
 
     foodList.innerHTML = ""
+    detailsList.innerHTML = ""
 }
 
 
@@ -81,5 +83,22 @@ foodPairingBtn.addEventListener("click", (e) => {
 
     } else {
         foodList.innerHTML = ""
+    }
+})
+
+moreBeerDetailsBtn.addEventListener("click", (e) => {
+
+    if(detailsList.innerHTML === ""){
+        
+        let abvLI = document.createElement("li")
+        let ibuLI = document.createElement("li")
+        
+        abvLI.textContent = `Alcohol Content: ${curBeer.abv}%`
+        ibuLI.textContent = `Bitterness (0-100): ${curBeer.ibu} ibus`
+
+        detailsList.append(abvLI, ibuLI)
+
+    } else {
+        detailsList.innerHTML = ""
     }
 })
