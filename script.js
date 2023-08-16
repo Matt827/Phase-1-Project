@@ -9,6 +9,7 @@ const beerMenu = document.querySelector("#bottom")
 const checkbox = document.querySelector("#checkbox")
 const confirm21 = document.querySelector("#confirm21")
 const mainContentDiv = document.querySelector("#mainContent")
+const header = document.querySelector("header")
 
 // Functions
 function beerDisplay(beerObj){
@@ -57,5 +58,5 @@ fetch(url)
 
 // Checkbox event that unblurrs the background
 checkbox.addEventListener("change", (e) => {
-    e.target.checked === true ? (mainContentDiv.classList.remove("blur"), confirm21.classList.add("hidden")) : alert("UNDERAGEEEEEEEEE")
+    e.target.checked === true ? (mainContentDiv.classList.remove("blur"), header.classList.remove("blur"), confirm21.classList.add("hidden")) : alert("UNDERAGEEEEEEEEE")
 })
