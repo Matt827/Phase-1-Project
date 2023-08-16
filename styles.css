@@ -7,6 +7,25 @@ body{
     margin: 0;
 }
 
+/* Begin confirm21 div styles */
+#confirm21{
+    font-size: 30px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+    border: 3px solid black;
+    z-index: 2;
+}
+
+#confirm21 fieldset{
+    border: none;
+    text-align: center;
+}
+/* End confirm21 div  styles */
+
+
 /* Begin header styles */
 header{
     text-align: center;
@@ -31,10 +50,6 @@ h1{
 #mainContent{
     max-width: 1350px;
     margin: 30px auto;
-    /* background-image: url("https://images.unsplash.com/photo-1597290282695-edc43d0e7129?crop=faces%2Cedges&cs=tinysrgb&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjkyMTM3NjM3fA&ixlib=rb-4.0.3&q=60&w=1200&auto=format&h=630&mark-w=64&mark-align=top%2Cleft&mark-pad=50&blend-mode=normal&blend-alpha=10&blend-w=1&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&blend=000000");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
 }
 
 
