@@ -44,11 +44,11 @@ fetch(url)
         })
 
         container.addEventListener("mouseover", (e) => {
-            container.style.backgroundColor = "orange"
+            container.style.background = "gray"
         })
 
         container.addEventListener("mouseout", (e) => {
-            container.style.backgroundColor = "tan"
+            container.style.background = "linear-gradient(white, lightgray)"
         })
 
     })
