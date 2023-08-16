@@ -4,16 +4,26 @@
 
 header{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
 }
 
-#center{
-    margin: 0 auto;
+#blur{
+    max-width: 1350px;
+    margin: 30px auto;
+    /* background-image: url("https://images.unsplash.com/photo-1597290282695-edc43d0e7129?crop=faces%2Cedges&cs=tinysrgb&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjkyMTM3NjM3fA&ixlib=rb-4.0.3&q=60&w=1200&auto=format&h=630&mark-w=64&mark-align=top%2Cleft&mark-pad=50&blend-mode=normal&blend-alpha=10&blend-w=1&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&blend=000000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
 }
+
 
 #right{
     width: 300px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 500px;
 }
 
 #left{
@@ -23,33 +33,54 @@ header{
 }
 
 #middle{
-    border: 1px solid black;
     text-align: center;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-
 
 #beer-image{
     width: 150px;
     height: 450px;
 }
 
+#brewersTips, #beerDescription {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 #bottom{
     display: flex;
-    gap: 10px; 
+    gap: 15px; 
     overflow-x: scroll; 
 }
 
 #bottom div{
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 10px;
     background-color: tan;
-    padding: 0px 10px;
+    padding: 0px 15px;
+    height: 300px;
+    position: relative;
+}
+
+#bottom div:hover{
+    cursor: pointer;
+}
+
+#bottom div h3{
+    width: 120px;
+    text-align: center;
 }
 
 #bottom div img{
-    width: 100px;
-    height: 300px;
+    width: 66px;
+    height: 200px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 2px;
+    left: 25%;
 }
 
 .blur{
