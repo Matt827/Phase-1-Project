@@ -10,14 +10,22 @@ const checkbox = document.querySelector("#checkbox")
 const confirm21 = document.querySelector("#confirm21")
 const mainContentDiv = document.querySelector("#mainContent")
 const header = document.querySelector("header")
+const foodPairingBtn = document.querySelector("#seeFoodPairings")
+const ingredientsBtn = document.querySelector("#seeIngredients")
+const foodList = document.querySelector("#foodPairings")
+
+let curBeer = {}
 
 // Functions
 function beerDisplay(beerObj){
+    curBeer = beerObj
     beerDisplayImage.src = beerObj.image_url
     beerDisplayName.textContent = beerObj.name
     beerDisplayTagline.textContent = beerObj.tagline
     beerDisplayDescription.textContent = beerObj.description
     beerDisplayBrewersTips.textContent = beerObj.brewers_tips
+
+    foodList.innerHTML = ""
 }
 
 
@@ -59,4 +67,19 @@ fetch(url)
 // Checkbox event that unblurrs the background
 checkbox.addEventListener("change", (e) => {
     e.target.checked === true ? (mainContentDiv.classList.remove("blur"), header.classList.remove("blur"), confirm21.classList.add("hidden")) : alert("UNDERAGEEEEEEEEE")
+})
+
+
+foodPairingBtn.addEventListener("click", (e) => {
+
+    if(foodList.innerHTML === ""){
+        curBeer.food_pairing.forEach((food) => {
+            let li = document.createElement("li")
+            li.textContent = food
+            foodList.append(li)
+        })
+
+    } else {
+        foodList.innerHTML = ""
+    }
 })
